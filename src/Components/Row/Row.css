@@ -1,0 +1,318 @@
+
+  
+  .row-title::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 30px;
+    width: 50px;
+    height: 3px;
+    background: #e50914;
+    border-radius: 3px;
+  }
+  
+  
+  /* استایل پیشرفته اسکرولر با افکت fade */
+  .row-posters {
+    width: 90%;
+    
+    /* margin-inline: auto; */
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 10px 30px;
+    scroll-behavior: smooth;
+    position: relative;
+    -ms-overflow-style: none;
+    /* scrollbar-width: 800px; */
+    mask-image: linear-gradient(
+      to right,
+      transparent,
+      black 10%,
+      black 90%,
+      transparent
+    );
+  }
+  
+  .row-posters::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* افکت‌های پیشرفته برای پسترها */
+  .row-poster {
+    object-fit: contain;
+    /* width: 100%; */
+    max-height: 280px;
+    margin-right: 20px;
+    transition: all 450ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border-radius: 0.5rem;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+    /* transform-origin: center left; */
+  }
+  
+  .row-poster::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.8) 0%,
+      rgba(0, 0, 0, 0) 50%
+    );
+    opacity: 0;
+    transition: opacity 300ms ease;
+  }
+  
+  .row-poster:hover {
+    transform: scale(1.05) ;
+    opacity: 1;
+    z-index: 10;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  }
+  
+  .row-poster-active {
+    border: 3px solid #e50914;
+    transform: scale(1.05) ;
+    /* box-shadow: 0 5px 5px rgba(229, 9, 20, 0.4); */
+    z-index: 20;
+  }
+  
+  /* دکمه‌های ناوبری اسکرول */
+  .scroll-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: calc(100% + 40px);
+    left: -20px;
+    display: flex;
+    justify-content: space-between;
+    pointer-events: none;
+    z-index: 5;
+  }
+  
+  .scroll-btn {
+    pointer-events: all;
+    background: rgba(78, 78, 78, 0.7);
+    border: none;
+    color: white;
+    width: 24px;
+    height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 1rem;
+    backdrop-filter: blur(5px);
+    transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    /* opacity: 0; */
+  }
+  
+  .scroll-btn.left {
+    left: 10px;
+    transform: translateY(0) translateX(20%);
+    opacity: 0;
+  }
+  
+  .scroll-btn.right {
+    right: 10px;
+    transform: translateY(0) translateX(-70%);
+  }
+  
+  .scroll-btn.visible {
+    transform: translateY(0) translateX(100%);
+    opacity: 1;
+  }
+  
+  /* .scroll-btn.hiddenl {
+    transform: translateY(-50%) translateX(-100%);
+    pointer-events: none;
+  } */
+  
+  
+  .scroll-btn.right.hidden {
+    transform: translateY(0) translateX(0);
+    opacity: 0;
+  
+  }
+  
+  
+  
+  .scroll-btn:hover {
+    background: rgba(229, 9, 20, 0.8);
+    /* transform: scale(1.); */
+  }
+  
+  
+  /* استایل‌های وضعیت‌های مختلف */
+  .row-loading,
+  .row-error {
+    padding: 30px;
+    text-align: center;
+    font-size: 1.2rem;
+    background: rgba(20, 20, 20, 0.7);
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 500px;
+  }
+  
+  .row-loading {
+    color: #aaa;
+  }
+  
+  .row-error {
+    color: #e50914;
+    border-left: 4px solid #e50914;
+  }
+  
+  
+  .bgmodal{
+    background: linear-gradient(
+    to top,
+    
+    #181818 98%,
+    #121212 200%,  
+    rgba(17, 17, 17, 0.8) 101%,
+    transparent 0%  /* کاملاً شفاف در 100% */
+  );
+    border-radius:0 0 .45rem .45rem;
+    padding-top: .1rem;
+  }
+  .bgimg{
+    height:100% ;
+    width:100%;
+    background-image: url("../public/Untitled-8.png");
+    
+  }
+  .position{
+    top: -32px;
+  }
+
+  /* رسپانسیو برای دستگاه‌های مختلف */
+  @media (max-width: 1024px) {
+    .row {
+      width: 95%;
+    }
+    
+    .row-title {
+      font-size: 1.6rem;
+    }
+    
+    .row-poster {
+      max-height: 220px;
+    }
+    
+    .scroll-btn {
+      width: 35px;
+      height: 50px;
+    }
+    .scroll-btn {
+      width: 24px;
+      height: 80px;
+      border-radius: 1rem;
+      
+    }.modal{
+      height: 24rem;
+      
+    }.m{
+      font-size: 1rem;
+    }.grids{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2px;
+    }
+    
+  }
+  @media (max-width: 970px) {
+    .m{
+      font-size: .8rem;
+    }.grids{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 8px;
+    }
+  }
+  @media (max-width: 768px) {
+    .row {
+      width: 100%;
+      padding: 15px 0;
+    }
+    
+    .row-posters {
+      padding: 20px 15px;
+    }
+    
+    .row-title {
+      font-size: 1.4rem;
+      padding-left: 15px;
+    }
+    
+    .row-poster {
+      max-height: 180px;
+      margin-right: 15px;
+    }
+    
+    .scroll-nav {
+      display: none;
+    }
+    .scroll-btn {
+      width: 24px;
+      height: 70px;
+      border-radius: 1rem;
+      
+    }.modal{
+      max-width: 16rem;
+    }.m{
+      font-size: .7rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .row-poster {
+      max-height: 150px;
+    }
+    
+    .trailer-info h3 {
+      font-size: 1.3rem;
+    }
+    
+    .trailer-info p {
+      font-size: 0.85rem;
+    }
+    .scroll-btn.left {
+      left: 10px;
+      transform: translateY(0) translateX(-30%);
+      opacity: 0;
+    }
+    .scroll-btn.right {
+      right: 10px;
+      transform: translateY(0) translateX(-30%);
+    }
+    .scroll-btn.visible {
+      transform: translateY(0) translateX(10%);
+      opacity: 1;
+    }
+    .scroll-btn.right.hidden {
+      transform: translateY(0) translateX(0);
+      opacity: 0;
+    
+    }
+    .scroll-btn {
+      width: 24px;
+      height: 65px;
+      border-radius: 1rem;
+      
+    }.modal{
+      max-width: 10rem;
+    }.m{
+      font-size: .6rem;
+    }
+
+    
+  }

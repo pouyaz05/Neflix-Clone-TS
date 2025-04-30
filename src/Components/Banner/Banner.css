@@ -1,0 +1,317 @@
+/* Banner.css */
+.banner-container {
+    position: relative;
+    width: 100%;
+}
+/* Banner.css */
+/* Banner.css */
+.bannerdiv {
+    width: 95%;
+    margin-inline: auto;
+    border-radius: 1rem;
+    display: flex;
+    overflow-x: hidden;
+    scroll-behavior: smooth; /* برای اسکرول نرم */
+    scroll-snap-type: x mandatory;
+    /* -webkit-overflow-scrolling: touch;    */
+    position: relative;
+}
+
+/* بقیه استایل‌ها مانند قبل */
+
+.banner {
+    scroll-snap-align: start;
+    flex: 0 0 100%;
+    min-width: 100%;
+    height: 75vh;
+    position: relative;
+    color: white;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.5s ease;
+}
+
+/* بقیه استایل‌ها مانند قبل */
+
+.nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-button.prev {
+    left: 0.5rem;
+}
+
+.nav-button.next {
+    right: 0.5rem;
+}
+
+.nav-button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.indicators {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    z-index: 10;
+}
+
+.indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+
+.indicator.active {
+    background-color: white;
+}
+
+/* بقیه استایل‌های قبلی شما */
+
+
+.banner-description {
+    width: 45rem;
+    line-height: 1.3;
+    padding-top: 1rem;
+    font-size: 0.8rem;
+    max-width: 360px;
+    height: auto;
+    overflow-wrap: break-word;
+    white-space: normal;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.banner-btn {
+    cursor: pointer;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    border-radius: 0.2vw;
+    padding: 0.5rem 2rem;
+    margin-right: 1rem;
+    background-color: rgba(51, 51, 51, 0.5);
+}
+
+.banner-btn:hover {
+    color: #000;
+    background-color: #e6e6e6;
+    transition: all 0.2s;
+}
+
+/* .banner-fade-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 7.4rem;
+    background-image: linear-gradient(
+        180deg,
+        transparent,
+        rgba(45, 42, 42, 0.61),
+        #383838
+    );
+} */
+
+/* رسپانسیو برای دستگاه‌های مختلف */
+@media (max-width: 2700px) {
+    .banner {
+        width: 80vh;
+        height: 80vh;
+    }.bannerdiv {   
+        width: 85%;
+        overflow-y: hidden;
+    }.nav-button {
+        top: 50%;
+        transform: translateY(-60%);
+        margin-right: 5%;
+        margin-left: 5%;
+        width: 4rem;
+        height: 4rem;
+    }.nevesh{
+        padding-top: 8rem;
+        margin-left: 5rem;
+        
+    }.titl{
+        font-size:3rem;
+    }.banner-btn {
+        font-weight: 800;
+        padding: 0.7rem 1.4rem;
+        margin-right: 1.5rem;
+        margin-top: rem;
+        background-color: rgba(41, 41, 41, 0.5);
+    }.indicators {
+        bottom: 20px;
+        gap: .5rem;
+    }
+    
+    .indicator {
+        width: 12px;
+        height: 12px;
+    }.banner-description {
+        width: 30rem;
+        line-height: 1.4;
+        margin-top: .5rem;
+        overflow-wrap: break-word;
+        font-size: x-large;
+    }
+    
+  }
+@media (max-width: 1024px) {
+    .banner {
+        width: 80vh;
+        height: 60vh;
+    }.bannerdiv {
+        width: 85%;
+        overflow-y: hidden;
+    }.nav-button {
+        top: 50%;
+        transform: translateY(-60%);
+        margin-right: 4%;
+        margin-left: 4%;
+        width: 3rem;
+        height: 3rem;
+    }.nevesh{
+        padding-top: 7rem;
+        margin-left: 3rem;
+        
+    }.titl{
+        font-size:x-large;
+    }.banner-btn {
+        font-weight: 400;
+        padding: 0.4rem 1rem;
+        margin-right: 1rem;
+        margin-top: .1rem;
+        background-color: rgba(51, 51, 51, 0.5);
+    }.indicators {
+        bottom: 20px;
+        gap: .5rem;
+    }
+    
+    .indicator {
+        width: 11px;
+        height: 11px;
+    }.banner-description {
+        width: 25rem;
+        line-height: 1rem;
+        padding-top: .6rem;
+        font-size: .8rem;
+        overflow-wrap: break-word;
+    }
+    
+    
+  }
+  
+  @media (max-width: 768px) {
+    .banner {
+        width: 80vh;
+        height: 60vh;
+    }.bannerdiv {
+        width: 85%;
+        overflow-y: hidden;
+    }.nav-button {
+        top: 50%;
+        transform: translateY(-60%);
+        margin-right: 2.5%;
+        margin-left: 2.5%;
+        width: 3rem;
+        height: 3rem;
+    }.nevesh{
+        padding-top: 6rem;
+        margin-left: 3rem;
+        padding-top: 7rem;
+    }.titl{
+        font-size:x-large;
+        font-weight: 700;
+    }.banner-btn {
+        font-weight: 400;
+        padding: 0.4rem .8rem;
+        margin-right: 1rem;
+        margin-top: .1rem;
+        font-size: small;
+    }.indicators {
+        bottom: 20px;
+        gap: .4rem;
+    }
+    
+    .indicator {
+        width: 9px;
+        height: 9px;
+    }
+  }.banner-description {
+    width: 20rem;
+    line-height: 1rem;
+    padding-top: .4rem;
+    font-size: .8rem;
+    overflow-wrap: break-word;
+}
+  
+  
+  @media (max-width: 480px) {
+    .banner {
+        width: 80vh;
+        height: 40vh;
+    }.bannerdiv {
+        width: 85%;
+        overflow-y: hidden;
+    }.nav-button {
+        top: 50%;
+        transform: translateY(-60%);
+        margin-right: 0%;
+        margin-left: 0%;
+        width: 2rem;
+        height: 2rem  ;
+    }.nevesh{
+        margin-left: 2rem;
+        padding-top: 3rem;
+    }.titl{
+        font-size:large;
+        font-weight: 600;
+    }.banner-btn {
+        font-weight: 200;
+        padding: 0.1rem .3rem;
+        font-size: small;
+        margin-right: .5rem;
+        font-size:x-small;
+
+    }.indicators {
+        bottom: 20px;
+        gap: .2rem;
+    }
+    
+    .indicator {
+        width: 3px;
+        height: 3px;
+    }
+    .banner-description {
+        width: 15rem;
+        line-height: .7rem;
+        padding-top: .5rem;
+        font-size: 0.6rem;
+        overflow-wrap: break-word;
+    }
+    
+  }

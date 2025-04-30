@@ -1,0 +1,20 @@
+@import "tailwindcss"; 
+
+
+
+body {
+  background-color: #111;
+  margin: 0;
+  overflow-x: hidden;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.App {
+  color: white;
+  background-image: URL("../public/hasan.png");
+  background-size: cover;
+  background-blend-mode: overlay;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+}

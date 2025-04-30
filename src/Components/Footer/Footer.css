@@ -1,0 +1,91 @@
+@import "tailwindcss"; 
+
+/* 
+@media (max-width: 1300px) {
+    .btnc{
+        font-size: medium;
+        
+    }
+    .inp{
+      font-size: medium;
+
+    }
+    .title{
+      font-size:medium;
+       
+    }
+    .acord{
+        font-size: medium;
+    }
+    
+  }
+   */
+  @media (max-width: 690px) {
+    .btnc{
+      font-size:.8rem;
+      width:30%;
+      padding: .5rem;
+      
+    }
+    .inp{
+      font-size: .8rem;
+      width:65%;
+      padding: .5rem;
+   }
+    .title{
+    font-size:smaller;
+      
+   }
+    .acord{
+      font-size: .8rem;
+      padding: .4rem;
+
+      
+  }
+  .phone{
+    font-size: .8rem;
+  }.detail{
+    font-size: 0.5rem;
+  }.grids{
+    gap: .6rem;
+  }.title1{
+    font-size: 1rem;
+  }.acord1{
+    gap: 3rem;
+  }
+  }
+  
+  @media (max-width: 500px) {
+    .btnc{
+      font-size:0.5rem;
+      width:30%;
+      padding: .5rem;
+      
+    }
+    .inp{
+      font-size: 0.5rem;
+      width:65%;
+      padding: .5rem;
+   }
+    .title{
+    font-size:x-small;
+      
+   }
+    .acord{
+      font-size: 0.5rem;
+      padding: .3rem;
+      /* margin-top: 1rem; */
+      
+  }
+  .phone{
+    font-size: 0.5rem;
+  }.detail{
+    font-size: 0.3rem;
+  }.grids{
+    gap: .4rem;
+  }.title1{
+    font-size: .8rem;
+  }.acord1{
+    grid: 3rem;
+  }
+  }
