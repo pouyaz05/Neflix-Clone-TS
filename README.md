@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
@@ -66,3 +67,7 @@ A responsive Netflix clone built with **TypeScript**, **React**, and **Tailwind 
 1. Clone the repo:
    ```bash  
    git clone https://github.com/pouyaz05  
+=======
+# Neflix-Clone-TS
+A Netflix clone built with TypeScript, React, and Tailwind CSS. The project demonstrates modern frontend skills like component-based UI, responsive design, and efficient styling.
+>>>>>>> origin/main
