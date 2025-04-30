@@ -193,7 +193,11 @@
   .position{
     top: -32px;
   }
-
+  @media (max-width: 2048px) {
+    .modal{
+      height: 30rem;
+    }
+  }
   /* رسپانسیو برای دستگاه‌های مختلف */
   @media (max-width: 1024px) {
     .row {
@@ -218,7 +222,7 @@
       border-radius: 1rem;
       
     }.modal{
-      height: 24rem;
+      height:24rem;
       
     }.m{
       font-size: 1rem;
@@ -266,12 +270,15 @@
       height: 70px;
       border-radius: 1rem;
       
+    }.mname{
+      font-size: xx-large;
     }.modal{
-      max-width: 16rem;
+      height: 15rem;
+    }.mname{
+      font-size: x-large;
     }.m{
       font-size: .7rem;
-    }
-  }
+    }}
   
   @media (max-width: 480px) {
     .row-poster {
@@ -309,10 +316,14 @@
       border-radius: 1rem;
       
     }.modal{
-      max-width: 10rem;
+      max-width: 17rem;
+      max-height: 8rem;
     }.m{
       font-size: .6rem;
+    }.mname{
+      font-size:larger;
+    }.logo{
+      margin-bottom: .5rem;
+      
     }
-
-    
   }

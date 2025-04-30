@@ -134,7 +134,7 @@ const Row: React.FC<RowProps> = ({ title, fetchUrl }) => {
             
             {/* Modal Content */}
             <div className="relative rounded-lg max-w-[60%]  mx-auto z-10 text-white border border-zinc-600 modal1">
-              <div className="h-98 bg-cover bg-center rounded-lg content-end modal" 
+              <div className=" bg-cover bg-center rounded-lg content-end modal modalbg" 
                                style={{
                              backgroundImage: `url(https://image.tmdb.org/t/p/original${selectedMovie.backdrop_path})`
                         }} >
@@ -143,15 +143,15 @@ const Row: React.FC<RowProps> = ({ title, fetchUrl }) => {
                   className="absolute top-2 right-4 text-gray-300 hover:text-white"
                   onClick={() => setSelectedMovie(null)}
                 >
-                  <span className="text-5xl">&times;</span>
+                  <span className="text-lg md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl">&times;</span>
                 </button>
 
                 {/* Movie Title */}
                 <div className="  bgimg   bg-no-repeat content-end bg-cover bg-bottom ">
-                <div className='flex flex-row ps-4 mb-10 '><img className=' w-15' src="../public/Netflix-N-Symbol-logo.png" alt="" />
-                 <h2 className='text-gray-400 mt-4 font-bold text-sm md:text-base lg:text-lg xl:text-xl font-mono  tracking-[0.5rem]'>FILM</h2>
+                <div className='flex flex-row ps-4 mb-10 logo'><img className=' w-[10%]' src="../public/Netflix-N-Symbol-logo.png" alt="" />
+                 <h2 className='text-gray-400 mt-4 font-bold text-sm  md:text-base lg:text-lg xl:text-xl font-mono  tracking-[0.5rem]'>FILM</h2>
                 </div>
-                <h1 className="text-4xl font-extrabold ps-8 pb-6 font-serif tracking-wider">
+                <h1 className="text-4xl mname font-extrabold ps-8 pb-6 font-serif tracking-wider">
                 {selectedMovie.title || selectedMovie.name }
               </h1></div>
               </div>
@@ -173,7 +173,7 @@ const Row: React.FC<RowProps> = ({ title, fetchUrl }) => {
                     {selectedMovie.origin_country?.[0] && (
                       <div className='flex flex-row items-center '>
                         <p className="font-semibold me-2 m">Country: </p>
-                        <p>{selectedMovie.origin_country[0]}</p>
+                        <p className='m'>{selectedMovie.origin_country[0]}</p>
                       </div>
                     )}
                     <Trailer movie={selectedMovie}/>

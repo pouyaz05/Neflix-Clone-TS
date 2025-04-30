@@ -52,3 +52,17 @@ export default tseslint.config({
   },
 })
 ```
+# Netflix Clone
+
+A responsive Netflix clone built with **TypeScript**, **React**, and **Tailwind CSS**, using the **TMDb API** for movie data.
+
+## Features
+- Responsive design for all screen sizes  
+- Movie browsing and display powered by TMDb API  
+- Clean and maintainable codebase
+
+## Installation
+
+1. Clone the repo:
+   ```bash  
+   git clone https://github.com/pouyaz05  
