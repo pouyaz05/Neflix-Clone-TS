@@ -1,5 +1,4 @@
 # 🎬 Netflix Clone - Professional Edition
-<<<<<<< HEAD
 # React + TypeScript + Vite + Tailwind
 
 > **A Production-Ready Netflix Clone** demonstrating modern full-stack development practices. Built with cutting-edge technologies and deployed to production with ۵۰۰K+ monthly users.
@@ -58,7 +57,7 @@ This is a **fully functional Netflix clone** that replicates Netflix's core feat
 ### Backend & Deployment
 | Service | Purpose | Status |
 |---------|---------|--------|
-| **Express** | login & sing in & jwt token |  
+| **Express** | login & sing in & jwt token |  ✅ good
 | **TMDb API** | Movie Database | ✅ Live but for iranian with vpn |
 | **Vercel** | Hosting  | ✅ Production |
 | **Let's Encrypt** | SSL Certificate | ✅ Secure |
