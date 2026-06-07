@@ -1,7 +1,7 @@
 # 🎬 Netflix Clone - Professional Edition
 # React + TypeScript + Vite + Tailwind
 
-> **A Production-Ready Netflix Clone** demonstrating modern full-stack development practices. Built with cutting-edge technologies and deployed to production with ۵۰۰K+ monthly users.
+> **A Production-Ready Netflix Clone** demonstrating modern full-stack development practices .
 
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-neflix--clone--ts.vercel.app-brightgreen?style=for-the-badge&logo=vercel)](https://neflix-clone-ts.vercel.app/)
 [![GitHub](https://img.shields.io/badge/GitHub-Repository-black?style=for-the-badge&logo=github)](https://github.com/pouyaz05/Neflix-Clone-TS)
