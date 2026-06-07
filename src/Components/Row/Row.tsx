@@ -95,7 +95,7 @@ const Row: React.FC<RowProps> = ({ title, fetchUrl }) => {
           onClick={() => scroll('left')}
           aria-label="Scroll left"
         >
-          <img src="../public/right (1).png" alt="" />
+          <img src="/right (1).png" alt="" />
         </button> 
         
         <div 
@@ -118,7 +118,7 @@ const Row: React.FC<RowProps> = ({ title, fetchUrl }) => {
             onClick={() => scroll('right')}
             aria-label="Scroll right"
           >
-            <img src="../public/rights.png" alt="" />
+            <img src="/rights.png" alt="" />
           </button>
       </div>
 
