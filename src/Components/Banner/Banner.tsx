@@ -107,10 +107,10 @@ const Banner: React.FC = () => {
             </div>  
 
             <button className="nav-button prev pe-1" onClick={prevBanner}>  
-                <img src="../public/right (1).png" alt="Previous" />  
+                <img src="/right (1).png" alt="Previous" />  
             </button>  
             <button className="nav-button next ps-1" onClick={nextBanner}>  
-                <img src="../public/right.png" alt="Next" />  
+                <img src="/right.png" alt="Next" />  
             </button>  
 
             {/* Indicators */}  
